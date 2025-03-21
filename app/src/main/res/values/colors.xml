@@ -1,5 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_50">#80000000</color>
+
+    <color name="rm_backgroup_home">#F6F6F6</color>
+    <color name="rm_backgroup_list_livestream">#80000000</color>
+    <color name="rm_backgroup_vote">#2C2D2F</color>
+    <color name="rm_backgroup_deposit">#2E3033</color>
+
+    <color name="rm_button_livestream_01">#FF7021</color>
+    <color name="rm_button_livestream_02">#1AFF7021</color>
+
+    <color name="rm_live">#F33030</color>
+    <color name="rm_comingsoon">#DBA001</color>
+
+    <color name="rm_success">#1C3C30</color>
+    <color name="rm_success_10">#1A1C3C30</color>
+    <color name="rm_failure">#412427</color>
+    <color name="rm_failure_10">#1A412427</color>
+
+    <color name="rm_backgroup_donate_top1">#FF4755</color>
+    <color name="rm_backgroup_donate_top2">#98DB7C</color>
+    <color name="rm_backgroup_donate_top3">#0083FD</color>
+    <color name="rm_backgroup_donate_top4">#00FFFFFF</color>
+
+    <color name="main_color_new">#2DB742</color>
+
+    <color name="rm_button_click01">#1AD86B</color>
+    <color name="rm_bg_red_live">#F33030</color>
+
+    <color name="rm_button_detail_right">#4360A8</color>
+    <color name="rm_button_detail_left">#ED618C</color>
+    <color name="rm_button_buy_right">#2DB742</color>
+    <color name="rm_button_buy_left">#47EF6D</color>
+
+    <color name="rm_text_dot">#AAAAAA</color>
+    <color name="rm_bg_home_button_01">#E9E9E9</color>
 </resources>

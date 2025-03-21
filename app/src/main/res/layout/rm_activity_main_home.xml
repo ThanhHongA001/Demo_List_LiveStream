@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Home.MainActivity_Home">
+
+    <!-- Toolbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rm_activity_main_home_cl_01"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/rm_backgroup_08"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/rm_activity_main_home_img_01"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/rm_ic_accout_01" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="9"
+                android:text="Hi, Hoaintt"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_02"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="8dp"
+                android:background="@drawable/rm_ic_search_02" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- RecyclerView để hiển thị các Fragment -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rm_activity_main_home_rv_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/rm_backgroup_home"/>
+
+    <!-- Thanh điều hướng -->
+    <LinearLayout
+        android:id="@+id/rm_activity_main_home_ln_03"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_03"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rm_ic_home"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_04"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rm_ic_home_phone"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_06"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_05"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rm_ic_home_selfcare"
+                app:tint="@color/black" />
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selfcare"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_07"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_06"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rm_ic_home_videos"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Videos"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_home_ln_08"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_home_img_07"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rm_ic_accout_02"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_home_tv_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Demo_List_LiveStream"
+rootProject.name = "Demo_LiveStream"
 include(":app")
