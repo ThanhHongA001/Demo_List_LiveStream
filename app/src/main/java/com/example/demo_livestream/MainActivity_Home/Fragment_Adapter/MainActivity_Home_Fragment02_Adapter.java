@@ -35,9 +35,9 @@ public class MainActivity_Home_Fragment02_Adapter extends RecyclerView.Adapter<M
         MainActivity_Home_Fragment02_Model item = itemList.get(position);
 
         // Gán dữ liệu vào các view
-        holder.textViewTitle.setText(item.getTitle());
-        holder.textViewViewCount.setText(item.getViewCount());
-        holder.imageViewThumbnail.setImageResource(item.getImageResource());
+        holder.textViewTitle.setText(item.getTitle_home_fragment02());
+        holder.textViewViewCount.setText(item.getViewCount_home_fragment02());
+        holder.imageViewThumbnail.setImageResource(item.getImageResource_home_fragment02());
 
         // Xử lý sự kiện click vào CardView
         holder.cardView.setOnClickListener(v -> {

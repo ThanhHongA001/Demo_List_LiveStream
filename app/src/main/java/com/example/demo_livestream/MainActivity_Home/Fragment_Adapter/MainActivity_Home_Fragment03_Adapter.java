@@ -30,10 +30,10 @@ public class MainActivity_Home_Fragment03_Adapter extends RecyclerView.Adapter<M
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MainActivity_Home_Fragment03_Model item = dataList.get(position);
-        holder.tvPrice.setText(item.getPrice());
-        holder.tvPackId.setText(item.getPackId());
-        holder.tvDetails.setText(item.getDetails());
-        holder.tvValidity.setText(item.getValidity());
+        holder.tvPrice.setText(item.getPrice_home_fragment03());
+        holder.tvPackId.setText(item.getPackId_home_fragment03());
+        holder.tvDetails.setText(item.getDetails_home_fragment03());
+        holder.tvValidity.setText(item.getValidity_home_fragment03());
     }
 
     @Override

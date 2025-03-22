@@ -5,10 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.demo_livestream.MainActivity_Home.Fragment_Model.MainActivity_Home_Fragment01_Model;
 import com.example.demo_livestream.R;
 
@@ -33,13 +35,18 @@ public class MainActivity_Home_Fragment01_Adapter extends RecyclerView.Adapter<M
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        int realPosition = position % itemList.size();
-        holder.imageView.setImageResource(itemList.get(realPosition).getImageResId());
+        MainActivity_Home_Fragment01_Model item = itemList.get(position);
+
+        // Load ảnh từ API bằng Glide
+        Glide.with(context)
+                .load(item.getThumbnail())
+                .placeholder(R.drawable.rm_bacgroup_01)
+                .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
-        return Integer.MAX_VALUE;
+        return itemList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -49,10 +56,5 @@ public class MainActivity_Home_Fragment01_Adapter extends RecyclerView.Adapter<M
             super(itemView);
             imageView = itemView.findViewById(R.id.rm_activity_item01_iv_01);
         }
-    }
-
-    // Lấy vị trí thực tế trong danh sách
-    public int getRealPosition(int position) {
-        return position % itemList.size();
     }
 }

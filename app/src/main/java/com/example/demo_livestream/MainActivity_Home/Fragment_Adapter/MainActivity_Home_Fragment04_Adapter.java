@@ -16,10 +16,10 @@ import java.util.List;
 
 public class MainActivity_Home_Fragment04_Adapter extends RecyclerView.Adapter<MainActivity_Home_Fragment04_Adapter.ViewHolder> {
 
-    private List<MainActivity_Home_Fragment04_Model> itemList;
+    private List<MainActivity_Home_Fragment04_Model> list_home_fragment04;
 
-    public MainActivity_Home_Fragment04_Adapter(List<MainActivity_Home_Fragment04_Model> itemList) {
-        this.itemList = itemList;
+    public MainActivity_Home_Fragment04_Adapter(List<MainActivity_Home_Fragment04_Model> list_home_fragment04) {
+        this.list_home_fragment04 = list_home_fragment04;
     }
 
     @NonNull
@@ -31,27 +31,27 @@ public class MainActivity_Home_Fragment04_Adapter extends RecyclerView.Adapter<M
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        MainActivity_Home_Fragment04_Model item = itemList.get(position);
+        MainActivity_Home_Fragment04_Model item = list_home_fragment04.get(position);
 
-        holder.imageView.setImageResource(item.getImageResource());
-        holder.textViewName.setText(item.getLivestreamName());
-        holder.textViewViews.setText(item.getViewCount() + " View");
+        holder.imageView_home_fragment04.setImageResource(item.getImageResource_home_fragment04());
+        holder.textViewName_home_fragment04.setText(item.getLivestreamName_home_fragment04());
+        holder.textViewViews_home_fragment04.setText(item.getViewCount_home_fragment04() + " View");
     }
 
     @Override
     public int getItemCount() {
-        return itemList.size();
+        return list_home_fragment04.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textViewName, textViewViews;
+        ImageView imageView_home_fragment04;
+        TextView textViewName_home_fragment04, textViewViews_home_fragment04;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.rm_activity_item04_iv_01);
-            textViewName = itemView.findViewById(R.id.rm_activity_item04_tv_01);
-            textViewViews = itemView.findViewById(R.id.rm_activity_item04_tv_02);
+            imageView_home_fragment04 = itemView.findViewById(R.id.rm_activity_item04_iv_01);
+            textViewName_home_fragment04 = itemView.findViewById(R.id.rm_activity_item04_tv_01);
+            textViewViews_home_fragment04 = itemView.findViewById(R.id.rm_activity_item04_tv_02);
         }
     }
 }

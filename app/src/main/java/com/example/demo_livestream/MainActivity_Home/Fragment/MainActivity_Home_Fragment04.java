@@ -23,11 +23,11 @@ import java.util.List;
 
 public class MainActivity_Home_Fragment04 extends Fragment {
 
-    private RecyclerView recyclerView;
-    private MainActivity_Home_Fragment04_Adapter adapter;
-    private List<MainActivity_Home_Fragment04_Model> itemList;
+    private RecyclerView recyclerView_home_fragment04;
+    private MainActivity_Home_Fragment04_Adapter adapter_home_fragment04;
+    private List<MainActivity_Home_Fragment04_Model> list_home_fragment04;
 
-    private Button btnSeeAll;
+    private Button btnSeeAll_home_fragment04;
 
     @Nullable
     @Override
@@ -35,33 +35,33 @@ public class MainActivity_Home_Fragment04 extends Fragment {
         View view = inflater.inflate(R.layout.rm_activity_main_home_fragment04, container, false);
 
         // Ánh xạ nút bấm với ID chính xác từ XML
-        btnSeeAll = view.findViewById(R.id.rm_activity_main_home_fragment04_btn_01);
+        btnSeeAll_home_fragment04 = view.findViewById(R.id.rm_activity_main_home_fragment04_btn_01);
 
         // Sự kiện click để chuyển sang MainActivity_Button
-        btnSeeAll.setOnClickListener(v -> {
+        btnSeeAll_home_fragment04.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), MainActivity_Button.class);
             startActivity(intent);
         });
 
         // Ánh xạ RecyclerView với ID đúng
-        recyclerView = view.findViewById(R.id.rm_activity_main_home_fragment04_rv_01);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerView_home_fragment04 = view.findViewById(R.id.rm_activity_main_home_fragment04_rv_01);
+        recyclerView_home_fragment04.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         // Tạo danh sách item
-        itemList = new ArrayList<>();
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
+        list_home_fragment04 = new ArrayList<>();
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 1", 100));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 2", 200));
+        list_home_fragment04.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_bacgroup_01, "LiveStream 3", 300));
 
         // Thiết lập adapter
-        adapter = new MainActivity_Home_Fragment04_Adapter(itemList);
-        recyclerView.setAdapter(adapter);
+        adapter_home_fragment04 = new MainActivity_Home_Fragment04_Adapter(list_home_fragment04);
+        recyclerView_home_fragment04.setAdapter(adapter_home_fragment04);
 
         return view;
     }
