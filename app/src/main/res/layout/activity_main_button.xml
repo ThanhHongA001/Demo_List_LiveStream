@@ -217,5 +217,35 @@
         </LinearLayout>
 
     </LinearLayout>
+    <!--    Activity_All_Channel-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_main_button_tv_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity_All_Channel"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Activity_All_Channel"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="MAIN"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

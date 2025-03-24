@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.demo_livestream.MainActivity_All_Channel.MainActivity_All_Channel;
 import com.example.demo_livestream.MainActivity_Video_Live.MainActivity_Video_Live;
 
 import com.example.demo_livestream.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
@@ -32,7 +33,8 @@ public class MainActivity_Button extends AppCompatActivity {
     private AppCompatButton btnList_LiveStream_Fragment01, btnList_LiveStream_Fragment02, btnList_LiveStream_Fragment03, btnList_LiveStream;
     private AppCompatButton btnAll_LiveStream;
     private AppCompatButton btnStar;
-    private AppCompatButton btnVideo_Live_Fragment01,btnVideo_Live;
+    private AppCompatButton btnVideo_Live;
+    private AppCompatButton btnAll_Channel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +84,12 @@ public class MainActivity_Button extends AppCompatActivity {
         btnVideo_Live = findViewById(R.id.MainActivity_Video_Live);
         btnVideo_Live.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Video_Live.class);
+            startActivity(intent);
+        });
+
+        btnAll_Channel = findViewById(R.id.Activity_All_Channel);
+        btnAll_Channel.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_All_Channel.class);
             startActivity(intent);
         });
 

@@ -3,7 +3,79 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_item11"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/rm_activity_item11_img_01"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rm_bg_btn_rounded_border_01"
+        android:padding="5dp"
+        android:src="@drawable/rm_bacgroup_04"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rm_activity_item11_tv_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex sun"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/rm_activity_item11_img_01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/rm_activity_item11_ln_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rm_activity_item11_img_01"
+        app:layout_constraintTop_toBottomOf="@+id/rm_activity_item11_tv_01">
+
+        <TextView
+            android:id="@+id/rm_activity_item11_tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8k Follower"
+            android:textColor="@color/rm_text_dot"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rm_activity_item11_tv_03"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rm_bg_grey" />
+
+        <TextView
+            android:id="@+id/rm_activity_item11_tv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="367 Videos"
+            android:textColor="@color/rm_text_dot"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rm_activity_item11_btn_01"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:background="@drawable/rm_ic_button_folow_01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
