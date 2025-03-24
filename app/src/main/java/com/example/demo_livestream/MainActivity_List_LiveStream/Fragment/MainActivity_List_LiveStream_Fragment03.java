@@ -37,6 +37,18 @@ public class MainActivity_List_LiveStream_Fragment03 extends Fragment {
         List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("John", R.drawable.rm_bacgroup_04));
         List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Emma", R.drawable.rm_bacgroup_04));
         List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Liam", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("John", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Emma", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Liam", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("John", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Emma", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Liam", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("John", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Emma", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Liam", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("John", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Emma", R.drawable.rm_bacgroup_04));
+        List_list_livestream_fragment03.add(new MainActivity_List_LiveStream_Fragment03_Model("Liam", R.drawable.rm_bacgroup_04));
 
         // Thiết lập Adapter
         adapter_list_livestream_fragment03 = new MainActivity_List_LiveStream_Fragment03_Adapter(getContext(), List_list_livestream_fragment03);
