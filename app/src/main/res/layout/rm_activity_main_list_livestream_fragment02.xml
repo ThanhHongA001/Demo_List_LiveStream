@@ -30,7 +30,8 @@
                 android:text="Video LiveStream"
                 android:layout_marginLeft="10dp"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rm_activity_main_list_livestream_fragment02_btn_01"

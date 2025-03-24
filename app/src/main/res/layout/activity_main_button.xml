@@ -71,7 +71,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
     <!--    Activity_Live_LiveStream-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,6 +121,37 @@
                 android:layout_height="42dp"
                 android:text="Main"
                 android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    Activity_All_LiveStream-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_main_button_tv_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity_Live_LiveStream"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_All_LiveStream"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
 
         </LinearLayout>
 

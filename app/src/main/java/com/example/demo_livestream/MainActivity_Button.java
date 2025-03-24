@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.demo_livestream.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
 import com.example.demo_livestream.MainActivity_Home.MainActivity_Home;
 import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
 import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment02;
@@ -24,7 +25,7 @@ public class MainActivity_Button extends AppCompatActivity {
     // Khai báo các Button
     private AppCompatButton btnHomeFragment01, btnHomeFragment02, btnHomeFragment03, btnHomeFragment04, btnActivityHome;
     private AppCompatButton btnList_LiveStream_Fragment01, btnList_LiveStream_Fragment02, btnList_LiveStream_Fragment03, btnList_LiveStream;
-
+    private AppCompatButton btnAll_LiveStream;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +61,13 @@ public class MainActivity_Button extends AppCompatActivity {
         btnList_LiveStream_Fragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
         btnList_LiveStream.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_List_LiveStream.class);
+            startActivity(intent);
+
+        });
+
+        btnAll_LiveStream = findViewById(R.id.MainActivity_All_LiveStream);
+        btnAll_LiveStream.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_All_LiveStream.class);
             startActivity(intent);
 
         });
