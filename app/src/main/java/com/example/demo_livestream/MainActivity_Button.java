@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.demo_livestream.MainActivity_Video_Live.MainActivity_Video_Live;
 import com.example.demo_livestream.Xong.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
 import com.example.demo_livestream.Xong.MainActivity_Home.MainActivity_Home;
 import com.example.demo_livestream.Xong.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
@@ -28,6 +29,7 @@ public class MainActivity_Button extends AppCompatActivity {
     private AppCompatButton btnList_LiveStream_Fragment01, btnList_LiveStream_Fragment02, btnList_LiveStream_Fragment03, btnList_LiveStream;
     private AppCompatButton btnAll_LiveStream;
     private AppCompatButton btnStar;
+    private AppCompatButton btnVideo_Live_Fragment01,btnVideo_Live;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +42,6 @@ public class MainActivity_Button extends AppCompatActivity {
         btnHomeFragment03 = findViewById(R.id.MainActivity_Home_Fragment03);
         btnHomeFragment04 = findViewById(R.id.MainActivity_Home_Fragment04);
         btnActivityHome = findViewById(R.id.MainActivity_Home);
-
-        // Thiết lập sự kiện onClick cho các Button
         btnHomeFragment01.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment01()));
         btnHomeFragment02.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment02()));
         btnHomeFragment03.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment03()));
@@ -49,7 +49,6 @@ public class MainActivity_Button extends AppCompatActivity {
         btnActivityHome.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Home.class);
             startActivity(intent);
-
         });
 
         // Ánh xạ ID từ XML
@@ -57,28 +56,30 @@ public class MainActivity_Button extends AppCompatActivity {
         btnList_LiveStream_Fragment02 = findViewById(R.id.MainActivity_List_LiveStream_Fragment02);
         btnList_LiveStream_Fragment03 = findViewById(R.id.MainActivity_List_LiveStream_Fragment03);
         btnList_LiveStream = findViewById(R.id.MainActivity_List_LiveStream);
-
-        // Thiết lập sự kiện onClick cho các Button
         btnList_LiveStream_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
         btnList_LiveStream_Fragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
         btnList_LiveStream_Fragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
         btnList_LiveStream.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_List_LiveStream.class);
             startActivity(intent);
-
         });
 
         btnAll_LiveStream = findViewById(R.id.MainActivity_All_LiveStream);
         btnAll_LiveStream.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_All_LiveStream.class);
             startActivity(intent);
-
         });
+
         btnStar = findViewById(R.id.MainActivity_Star);
         btnStar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Star.class);
             startActivity(intent);
+        });
 
+        btnVideo_Live = findViewById(R.id.MainActivity_Video_Live);
+        btnVideo_Live.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_Video_Live.class);
+            startActivity(intent);
         });
 
     }
