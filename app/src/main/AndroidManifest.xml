@@ -19,18 +19,16 @@
             android:name=".MainActivity_Video_Live.MainActivity_Video_Live"
             android:exported="false" />
         <activity
-            android:name=".Xong.MainActivity_Star.MainActivity_Star"
+            android:name=".MainActivity_Star.MainActivity_Star"
             android:exported="false" />
         <activity
-            android:name=".Xong.MainActivity_All_LiveStream.MainActivity_All_LiveStream"
+            android:name=".MainActivity_All_LiveStream.MainActivity_All_LiveStream"
             android:exported="false" />
         <activity
-            android:name=".Xong.MainActivity_List_LiveStream.MainActivity_List_LiveStream"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".MainActivity_All_LiveStream.MainActivity_All_LiveStream" -->
-        <!-- android:exported="false" /> -->
+            android:name=".MainActivity_List_LiveStream.MainActivity_List_LiveStream"
+            android:exported="false" />
         <activity
-            android:name=".Xong.MainActivity_Home.MainActivity_Home"
+            android:name=".MainActivity_Home.MainActivity_Home"
             android:exported="false" />
         <activity
             android:name=".MainActivity_Button"
