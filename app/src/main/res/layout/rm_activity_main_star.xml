@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/rm_backgroup_vote"
     android:orientation="vertical"
-    tools:context=".MainActivity_Star.MainActivity_Star">
+    tools:context=".Xong.MainActivity_Star.MainActivity_Star">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rm_activity_main_star_cl_01"

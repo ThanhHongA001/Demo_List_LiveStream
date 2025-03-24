@@ -8,18 +8,18 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.demo_livestream.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
-import com.example.demo_livestream.MainActivity_Home.MainActivity_Home;
-import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
-import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment02;
-import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment03;
-import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment04;
+import com.example.demo_livestream.Xong.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
+import com.example.demo_livestream.Xong.MainActivity_Home.MainActivity_Home;
+import com.example.demo_livestream.Xong.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
+import com.example.demo_livestream.Xong.MainActivity_Home.Fragment.MainActivity_Home_Fragment02;
+import com.example.demo_livestream.Xong.MainActivity_Home.Fragment.MainActivity_Home_Fragment03;
+import com.example.demo_livestream.Xong.MainActivity_Home.Fragment.MainActivity_Home_Fragment04;
 
-import com.example.demo_livestream.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
-import com.example.demo_livestream.MainActivity_Star.MainActivity_Star;
+import com.example.demo_livestream.Xong.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
+import com.example.demo_livestream.Xong.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
+import com.example.demo_livestream.Xong.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
+import com.example.demo_livestream.Xong.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
+import com.example.demo_livestream.Xong.MainActivity_Star.MainActivity_Star;
 
 public class MainActivity_Button extends AppCompatActivity {
 
