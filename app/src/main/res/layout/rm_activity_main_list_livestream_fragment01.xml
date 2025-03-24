@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity_List_LiveStream.MainActivity_List_LiveStream_Fragment01">
+    tools:context=".MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01">
 
     <LinearLayout
         android:id="@+id/rm_activity_main_list_livestream_fragment01_ln_01"

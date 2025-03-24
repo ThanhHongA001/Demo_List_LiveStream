@@ -3,12 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity_List_LiveStream.MainActivity_List_LiveStream_Fragment02">
+    android:id="@+id/rm_activity_main_list_livestream_fragment02"
+    tools:context=".MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/rm_activity_main_list_livestream_fragment02_ln_01"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_list_livestream_fragment02_ln_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rm_activity_main_list_livestream_fragment02_tv_01"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video LiveStream"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rm_activity_main_list_livestream_fragment02_btn_01"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@color/white_transparent"
+                android:text="See all"
+                android:textColor="@color/rm_button_livestream_01"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rm_activity_main_list_livestream_fragment02_rv_01"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </FrameLayout>

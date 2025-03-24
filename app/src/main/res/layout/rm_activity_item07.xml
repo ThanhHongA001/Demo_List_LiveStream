@@ -1,7 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_item07_fr_01"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rm_activity_item07_ln_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rm_activity_item07_cv_01"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/rm_activity_item07_img_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rm_bacgroup_01"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/rm_activity_item07_img_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rm_bacgroup_04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rm_activity_item07_ln_01" />
+
+    <LinearLayout
+        android:id="@+id/rm_activity_item07_ln_02"
+        android:layout_width="324dp"
+        android:layout_height="97dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/rm_activity_item07_img_02"
+        app:layout_constraintTop_toBottomOf="@+id/rm_activity_item07_ln_01">
+
+        <TextView
+            android:id="@+id/rm_activity_item07_tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="LiveStream with jenrry huynh"
+            android:textColor="@color/rm_text_dot" />
+
+        <TextView
+            android:id="@+id/rm_activity_item07_tv_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_item05"
+            android:textColor="@color/rm_text_dot" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rm_activity_item07_ln_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rm_activity_item07_tv_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000 View"
+                android:textColor="@color/rm_text_dot"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rm_activity_item07_tv_04"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rm_bg_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rm_activity_item07_tv_03"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rm_activity_item07_tv_05"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="1 hours"
+                android:textColor="@color/rm_text_dot"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rm_activity_item07_tv_04"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

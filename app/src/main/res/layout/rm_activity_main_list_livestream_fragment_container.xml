@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rm_activity_main_list_livestream_fragment01_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <!-- FrameLayout chứa Fragment 1 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_livestream_fragment01_container_fl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- FrameLayout chứa Fragment 2 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_livestream_fragment01_container_fl_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- FrameLayout chứa Fragment 3 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_livestream_fragment01_container_fl_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

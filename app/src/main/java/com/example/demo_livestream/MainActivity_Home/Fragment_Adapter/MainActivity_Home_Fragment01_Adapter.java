@@ -19,15 +19,15 @@ import java.util.List;
 public class MainActivity_Home_Fragment01_Adapter extends RecyclerView.Adapter<MainActivity_Home_Fragment01_Adapter.ViewHolder> {
     private List<MainActivity_Home_Fragment01_Model> list_home_fragment01;
     private Context context_home_fragment01;
-    private RecyclerView recyclerView;
-    private Handler handler = new Handler();
-    private Runnable runnable;
+    private RecyclerView recyclerView_home_livestream;
+    private Handler handler_home_livestream = new Handler();
+    private Runnable runnable_home_livestream;
 
     // Constructor Adapter
     public MainActivity_Home_Fragment01_Adapter(Context context_home_fragment01, List<MainActivity_Home_Fragment01_Model> list_home_fragment01, RecyclerView recyclerView) {
         this.context_home_fragment01 = context_home_fragment01;
         this.list_home_fragment01 = list_home_fragment01;
-        this.recyclerView = recyclerView;
+        this.recyclerView_home_livestream = recyclerView;
     }
 
     @NonNull
@@ -40,7 +40,7 @@ public class MainActivity_Home_Fragment01_Adapter extends RecyclerView.Adapter<M
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         MainActivity_Home_Fragment01_Model item = list_home_fragment01.get(position % list_home_fragment01.size());
-        holder.imageView_home_fragment01.setImageResource(item.getImageResId());
+        holder.imageView_home_fragment01.setImageResource(item.getImageResId_home_livestream());
     }
 
     @Override
@@ -59,19 +59,19 @@ public class MainActivity_Home_Fragment01_Adapter extends RecyclerView.Adapter<M
 
     // Bắt đầu auto-scroll
     public void startAutoScroll() {
-        runnable = new Runnable() {
+        runnable_home_livestream = new Runnable() {
             @Override
             public void run() {
-                int currentPosition = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
-                recyclerView.smoothScrollToPosition(currentPosition + 1);
-                handler.postDelayed(this, 3000); // Lặp lại sau 3 giây
+                int currentPosition = ((LinearLayoutManager) recyclerView_home_livestream.getLayoutManager()).findFirstVisibleItemPosition();
+                recyclerView_home_livestream.smoothScrollToPosition(currentPosition + 1);
+                handler_home_livestream.postDelayed(this, 3000); // Lặp lại sau 3 giây
             }
         };
-        handler.postDelayed(runnable, 3000);
+        handler_home_livestream.postDelayed(runnable_home_livestream, 3000);
     }
 
     // Dừng auto-scroll khi không cần thiết
     public void stopAutoScroll() {
-        handler.removeCallbacks(runnable);
+        handler_home_livestream.removeCallbacks(runnable_home_livestream);
     }
 }

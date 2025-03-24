@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@color/rm_backgroup_home"/>
+        android:background="@color/rm_bg_home_button_01"/>
 
     <!-- Thanh điều hướng -->
     <LinearLayout
