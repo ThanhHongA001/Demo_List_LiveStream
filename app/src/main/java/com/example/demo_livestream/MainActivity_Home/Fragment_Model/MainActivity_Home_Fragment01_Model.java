@@ -1,25 +1,18 @@
 package com.example.demo_livestream.MainActivity_Home.Fragment_Model;
 
 public class MainActivity_Home_Fragment01_Model {
-    private String id;
-    private String title;
-    private String thumbnail; // Ảnh đại diện của livestream
+    private int imageResId;
 
-    public MainActivity_Home_Fragment01_Model(String id, String title, String thumbnail) {
-        this.id = id;
-        this.title = title;
-        this.thumbnail = thumbnail;
+    // Constructor đầy đủ
+    public MainActivity_Home_Fragment01_Model(int imageResId) {
+        this.imageResId = imageResId;
     }
 
-    public String getId() {
-        return id;
+    public int getImageResId() {
+        return imageResId;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getThumbnail() {
-        return thumbnail;
+    public void setImageResId(int imageResId) {
+        this.imageResId = imageResId;
     }
 }

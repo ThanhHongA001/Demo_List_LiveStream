@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:background="@drawable/rm_bg_white_transparent"
-    android:id="@+id/rm_activity_item01_cl_01">
+    android:id="@+id/rm_activity_item01">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/rm_activity_item01_cv_01"

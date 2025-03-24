@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-            <me.relex.circleindicator.CircleIndicator2
+                <me.relex.circleindicator.CircleIndicator2
                 android:id="@+id/rm_activity_main_home_fragment01_ci_01"
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
