@@ -1,4 +1,4 @@
-package com.example.demo_livestream.MainActivity_Channel;
+package com.example.demo_livestream.MainActivity_Channel.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.demo_livestream.MainActivity_Channel.Fragment_Adapter.MainActivity_Channel_Fragment02_Adapter;
+import com.example.demo_livestream.MainActivity_Channel.Fragment_Model.MainActivity_Channel_Fragment02_Model;
 import com.example.demo_livestream.R;
 
 import java.util.ArrayList;

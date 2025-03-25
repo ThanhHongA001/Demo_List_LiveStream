@@ -9,7 +9,7 @@
     tools:context=".MainActivity_Button"
     android:orientation="vertical">
 
-    <!--    Activity_Home-->
+    <!-- MainActivity_Home -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:id="@+id/activity_main_button_tv_01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Home"
+            android:text="MainActivity_Home"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Home_Fragment01"
+                android:id="@+id/MainActivity_Home_Fragment_01"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -37,7 +37,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Home_Fragment02"
+                android:id="@+id/MainActivity_Home_Fragment_02"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -45,7 +45,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Home_Fragment03"
+                android:id="@+id/MainActivity_Home_Fragment_03"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -53,7 +53,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Home_Fragment04"
+                android:id="@+id/MainActivity_Home_Fragment_04"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -61,7 +61,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Home"
+                android:id="@+id/MainActivity_Home_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -71,7 +71,8 @@
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_Live_LiveStream-->
+
+    <!-- MainActivity_Live_LiveStream -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,7 +83,7 @@
             android:id="@+id/activity_main_button_tv_02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Live_LiveStream"
+            android:text="MainActivity_Live_LiveStream"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -91,7 +92,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_List_LiveStream_Fragment01"
+                android:id="@+id/MainActivity_List_LiveStream_Fragment_01"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -99,7 +100,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_List_LiveStream_Fragment02"
+                android:id="@+id/MainActivity_List_LiveStream_Fragment_02"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -107,7 +108,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_List_LiveStream_Fragment03"
+                android:id="@+id/MainActivity_List_LiveStream_Fragment_03"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -115,7 +116,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_List_LiveStream"
+                android:id="@+id/MainActivity_List_LiveStream_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -125,7 +126,8 @@
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_All_LiveStream-->
+
+    <!-- MainActivity_All_LiveStream -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -136,7 +138,7 @@
             android:id="@+id/activity_main_button_tv_03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Live_LiveStream"
+            android:text="MainActivity_All_LiveStream"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -145,18 +147,18 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_All_LiveStream"
+                android:id="@+id/MainActivity_All_LiveStream_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
                 android:text="Main"
                 android:textSize="18sp"/>
 
-
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_Star-->
+
+    <!-- MainActivity_Star -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -167,7 +169,7 @@
             android:id="@+id/activity_main_button_tv_04"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Star"
+            android:text="MainActivity_Star"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -176,18 +178,18 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Star"
+                android:id="@+id/MainActivity_Star_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
                 android:text="Main"
                 android:textSize="18sp"/>
 
-
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_Video_Live-->
+
+    <!-- MainActivity_Video_Play -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -198,7 +200,7 @@
             android:id="@+id/activity_main_button_tv_05"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Video_Live"
+            android:text="MainActivity_Video_Play"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -207,7 +209,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/MainActivity_Video_Live"
+                android:id="@+id/MainActivity_Video_Play_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -217,7 +219,8 @@
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_All_Channel-->
+
+    <!-- MainActivity_All_Channel -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -228,7 +231,7 @@
             android:id="@+id/activity_main_button_tv_06"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_All_Channel"
+            android:text="MainActivity_All_Channel"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -237,7 +240,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_All_Channel"
+                android:id="@+id/MainActivity_All_Channel_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -247,7 +250,8 @@
         </LinearLayout>
 
     </LinearLayout>
-    <!--    Activity_Channel-->
+
+    <!-- MainActivity_Channel -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -258,7 +262,7 @@
             android:id="@+id/activity_main_button_tv_07"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity_Channel"
+            android:text="MainActivity_Channel"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -267,7 +271,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Channel_Fragment01"
+                android:id="@+id/MainActivity_Channel_Fragment_01"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -275,7 +279,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Channel_Fragment02"
+                android:id="@+id/MainActivity_Channel_Fragment_02"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -283,7 +287,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Channel"
+                android:id="@+id/MainActivity_Channel_Activity"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -293,5 +297,99 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <!-- MainActivity_Search -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_main_button_tv_08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MainActivity_Search"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Search_Fragment_01"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Search_Fragment_02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Search_Activity"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="MAIN"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- MainActivity_Video_Live -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_main_button_tv_09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MainActivity_Video_Live"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Video_Live_Fragment_01"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Video_Live_Fragment_02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/MainActivity_Video_Live_Activity"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="MAIN"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_video_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rm_backgroup_vote"
+    tools:context=".MainActivity_Video_Play.MainActivity_Video_Play">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rm_activity_main_video_play_cl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/rm_activity_main_video_play_img_01"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rm_ic_navigation_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rm_activity_main_video_play_cl_02"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <VideoView
+            android:id="@+id/rm_activity_main_video_play_vv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rm_activity_main_video_play_btn_01"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/rm_ic_play_01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/rm_activity_main_video_play_prb_01"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rm_activity_main_video_play_cl_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/rm_activity_main_video_play_tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title video"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rm_activity_main_video_play_tv_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/text_item10"
+            android:textColor="@color/rm_text_dot"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rm_activity_main_video_play_tv_02" />
+
+        <TextView
+            android:id="@+id/rm_activity_main_video_play_btn_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="See more"
+            android:textColor="@color/rm_button_livestream_01"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rm_activity_main_video_play_tv_03"
+            app:layout_constraintTop_toBottomOf="@id/rm_activity_main_video_play_tv_02" />
+
+        <ImageView
+            android:id="@+id/rm_activity_main_video_play_img_02"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rm_bacgroup_04"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rm_activity_main_video_play_tv_03" />
+
+        <TextView
+            android:id="@+id/rm_activity_main_video_play_tv_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Alex sun"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/rm_activity_main_video_play_img_02"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/rm_activity_main_video_play_img_02"
+            app:layout_constraintTop_toBottomOf="@+id/rm_activity_main_video_play_tv_03" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rm_activity_main_video_play_btn_03"
+            android:layout_width="110dp"
+            android:layout_height="42dp"
+            android:background="@drawable/rm_ic_button_folow_01"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rm_activity_main_video_play_btn_02" />
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_video_play_ln_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rm_activity_main_video_play_img_02">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_video_play_img_03"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/rm_ic_like"/>
+
+            <TextView
+                android:id="@+id/rm_activity_main_video_play_tv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="367 Like"
+                android:textColor="@color/rm_text_dot"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/rm_activity_main_video_play_img_04"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/rm_ic_comment_chat" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_video_play_tv_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="367 Comments"
+                android:textColor="@color/rm_text_dot"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rm_activity_main_video_play_rcv_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/rm_activity_main_channel_fragment01"
-    tools:context=".MainActivity_Channel.MainActivity_Channel_Fragment01"
+    tools:context=".MainActivity_Channel.Fragment.MainActivity_Channel_Fragment01"
     android:padding="10dp">
 
     <LinearLayout

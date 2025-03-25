@@ -1,4 +1,4 @@
-package com.example.demo_livestream.MainActivity_Video_Live;
+package com.example.demo_livestream.MainActivity_Search;
 
 import android.os.Bundle;
 
@@ -10,13 +10,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.demo_livestream.R;
 
-public class MainActivity_Video_Live extends AppCompatActivity {
+public class MainActivity_Search extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.rm_activity_main_video_live);
+        setContentView(R.layout.rm_activity_main_search);
+
 
     }
 }

@@ -1,4 +1,4 @@
-package com.example.demo_livestream.MainActivity_Channel;
+package com.example.demo_livestream.MainActivity_Channel.Fragment_Model;
 
 public class MainActivity_Channel_Fragment02_Model {
     private String title;

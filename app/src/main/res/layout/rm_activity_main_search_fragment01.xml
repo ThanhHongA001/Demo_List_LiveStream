@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rm_activity_main_channel_fragment02"
-    tools:context=".MainActivity_Channel.Fragment.MainActivity_Channel_Fragment02">
+    android:id="@+id/rm_activity_main_search_fragment01"
+    tools:context=".MainActivity_Search.Fragment.MainActivity_Search_Fragment01">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rm_activity_main_channel_fragment02_rcv01"
+        android:id="@+id/rm_activity_main_search_fragment01_rcv_01"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </FrameLayout>

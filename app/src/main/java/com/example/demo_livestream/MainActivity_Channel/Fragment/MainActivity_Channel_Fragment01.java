@@ -1,4 +1,4 @@
-package com.example.demo_livestream.MainActivity_Channel;
+package com.example.demo_livestream.MainActivity_Channel.Fragment;
 
 import android.os.Bundle;
 

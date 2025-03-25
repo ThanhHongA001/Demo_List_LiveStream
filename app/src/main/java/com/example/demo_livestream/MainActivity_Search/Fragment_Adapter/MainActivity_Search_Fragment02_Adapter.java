@@ -1,35 +1,42 @@
-package com.example.demo_livestream.MainActivity_Video_Live;
+package com.example.demo_livestream.MainActivity_Search.Fragment_Adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.demo_livestream.MainActivity_Search.Fragment_Model.MainActivity_Search_Fragment02_Model;
 import com.example.demo_livestream.R;
+
 import java.util.List;
 
-public class MainActivity_Video_Live_Adapter extends RecyclerView.Adapter<MainActivity_Video_Live_Adapter.ViewHolder> {
-    private List<MainActivity_Video_Live_Model> itemList;
+public class MainActivity_Search_Fragment02_Adapter extends RecyclerView.Adapter<MainActivity_Search_Fragment02_Adapter.ViewHolder> {
 
-    public MainActivity_Video_Live_Adapter(List<MainActivity_Video_Live_Model> itemList) {
+    private Context context;
+    private List<MainActivity_Search_Fragment02_Model> itemList;
+
+    public MainActivity_Search_Fragment02_Adapter(Context context, List<MainActivity_Search_Fragment02_Model> itemList) {
+        this.context = context;
         this.itemList = itemList;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rm_activity_item10, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.rm_activity_item10, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        MainActivity_Video_Live_Model item = itemList.get(position);
+        MainActivity_Search_Fragment02_Model item = itemList.get(position);
         holder.tvTitle.setText(item.getTitle());
-        holder.tvUsername.setText(item.getUsername());
-        holder.tvViews.setText(item.getViews() + " Views");
+        holder.tvStreamer.setText(item.getStreamer());
+        holder.tvViews.setText(item.getViews());
         holder.tvTime.setText(item.getTime());
     }
 
@@ -39,17 +46,14 @@ public class MainActivity_Video_Live_Adapter extends RecyclerView.Adapter<MainAc
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvTitle, tvUsername, tvViews, tvTime;
-        ImageView imgThumbnail, imgLiveIcon;
+        TextView tvTitle, tvStreamer, tvViews, tvTime;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.rm_activity_item10_tv_01);
-            tvUsername = itemView.findViewById(R.id.rm_activity_item10_tv_02);
+            tvStreamer = itemView.findViewById(R.id.rm_activity_item10_tv_02);
             tvViews = itemView.findViewById(R.id.rm_activity_item10_tv_03);
             tvTime = itemView.findViewById(R.id.rm_activity_item10_tv_05);
-            imgThumbnail = itemView.findViewById(R.id.rm_activity_item10_img_01);
-            imgLiveIcon = itemView.findViewById(R.id.rm_activity_item10_img_02);
         }
     }
 }
