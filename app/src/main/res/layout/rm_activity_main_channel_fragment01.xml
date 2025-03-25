@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rm_activity_main_channel_fragment01"
+    tools:context=".MainActivity_Channel.MainActivity_Channel_Fragment01"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/rm_activity_main_channel_fragment01_ln_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rm_activity_main_channel_fragment01_tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rm_activity_main_channel_fragment01_tv_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_Introduction_Channel"/>
+
+        <TextView
+            android:id="@+id/rm_activity_main_channel_fragment01_tv_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create channels form"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rm_activity_main_channel_fragment01_tv_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_Introduction_Channel"/>
+    </LinearLayout>
+
+</FrameLayout>

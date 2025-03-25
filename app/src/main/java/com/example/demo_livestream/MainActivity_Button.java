@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.demo_livestream.MainActivity_All_Channel.MainActivity_All_Channel;
+import com.example.demo_livestream.MainActivity_Channel.MainActivity_Channel;
+import com.example.demo_livestream.MainActivity_Channel.MainActivity_Channel_Fragment01;
+import com.example.demo_livestream.MainActivity_Channel.MainActivity_Channel_Fragment02;
 import com.example.demo_livestream.MainActivity_Video_Live.MainActivity_Video_Live;
 
 import com.example.demo_livestream.MainActivity_All_LiveStream.MainActivity_All_LiveStream;
@@ -35,6 +38,7 @@ public class MainActivity_Button extends AppCompatActivity {
     private AppCompatButton btnStar;
     private AppCompatButton btnVideo_Live;
     private AppCompatButton btnAll_Channel;
+    private AppCompatButton btnChannel_Fragment01,btnChannel_Fragment02,btnChannel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +94,16 @@ public class MainActivity_Button extends AppCompatActivity {
         btnAll_Channel = findViewById(R.id.Activity_All_Channel);
         btnAll_Channel.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_All_Channel.class);
+            startActivity(intent);
+        });
+
+        btnChannel_Fragment01 = findViewById(R.id.Activity_Channel_Fragment01);
+        btnChannel_Fragment02 = findViewById(R.id.Activity_Channel_Fragment02);
+        btnChannel = findViewById(R.id.Activity_Channel);
+        btnChannel_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_Channel_Fragment01()));
+        btnChannel_Fragment02.setOnClickListener(v -> openFragment(new MainActivity_Channel_Fragment02()));
+        btnChannel.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_Channel.class);
             startActivity(intent);
         });
 

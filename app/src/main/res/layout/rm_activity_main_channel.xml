@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_channel_cl_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rm_backgroup_vote"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Channel.MainActivity_Channel">
+
+    <ImageView
+        android:id="@+id/rm_activity_main_channel_img_01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rm_bacgroup_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/rm_activity_main_channel_img_02"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/rm_ic_navigation_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/rm_activity_main_channel_ln_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        android:background="@color/rm_backgroup_vote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rm_activity_main_channel_cl_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/rm_activity_main_channel_img_03"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/rm_bg_btn_rounded_border_01"
+                android:padding="5dp"
+                android:src="@drawable/rm_bacgroup_04"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_channel_tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alex sun"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/rm_activity_main_channel_img_03"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/rm_activity_main_channel_ln_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rm_activity_main_channel_img_03"
+                app:layout_constraintTop_toBottomOf="@+id/rm_activity_main_channel_tv_01">
+
+                <TextView
+                    android:id="@+id/rm_activity_main_channel_tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8k Follower"
+                    android:textColor="@color/rm_text_dot"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rm_activity_main_channel_tv_03"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rm_bg_grey" />
+
+                <TextView
+                    android:id="@+id/rm_activity_main_channel_tv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="367 Videos"
+                    android:textColor="@color/rm_text_dot"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rm_activity_main_channel_btn_01"
+                android:layout_width="110dp"
+                android:layout_height="42dp"
+                android:background="@drawable/rm_ic_button_folow_01"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/rm_activity_main_channel_tb_01"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_transparent"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/rm_activity_main_channel_vp2_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
