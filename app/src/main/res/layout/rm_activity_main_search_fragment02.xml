@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rm_activity_main_search_fragment02"
-    tools:context=".MainActivity_Search.Fragment.MainActivity_Search_Fragment02">
+    tools:context=".MainActivity.MainActivity_Search.Fragment.MainActivity_Search_Fragment02">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rm_activity_main_search_fragment02_rcv_01"

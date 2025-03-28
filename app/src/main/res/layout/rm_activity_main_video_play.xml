@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/rm_backgroup_vote"
-    tools:context=".MainActivity_Video_Play.MainActivity_Video_Play">
+    tools:context=".MainActivity.MainActivity_Video_Play.MainActivity_Video_Play">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rm_activity_main_video_play_cl_01"

@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/rm_backgroup_vote"
     android:orientation="vertical"
-    tools:context=".MainActivity_Channel.MainActivity_Channel">
+    tools:context=".MainActivity.MainActivity_Channel.MainActivity_Channel">
 
     <ImageView
         android:id="@+id/rm_activity_main_channel_img_01"

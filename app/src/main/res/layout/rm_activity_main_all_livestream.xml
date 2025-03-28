@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/rm_backgroup_vote"
     android:orientation="vertical"
-    tools:context=".MainActivity_All_LiveStream.MainActivity_All_LiveStream">
+    tools:context=".MainActivity.MainActivity_All_LiveStream.MainActivity_All_LiveStream">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rm_activity_main_all_livestream_cl_01"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rm_activity_main_list_livestream_fragment02"
-    tools:context=".MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Video">
+    tools:context=".MainActivity.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Video">
 
     <LinearLayout
         android:id="@+id/rm_activity_main_list_livestream_fragment02_ln_01"
