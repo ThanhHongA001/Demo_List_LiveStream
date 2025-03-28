@@ -22,9 +22,9 @@ import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_
 import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment03;
 import com.example.demo_livestream.MainActivity_Home.Fragment.MainActivity_Home_Fragment04;
 import com.example.demo_livestream.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Banner;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Video;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Channel;
 import com.example.demo_livestream.MainActivity_Star.MainActivity_Star;
 
 public class MainActivity_Button extends AppCompatActivity {
@@ -60,9 +60,9 @@ public class MainActivity_Button extends AppCompatActivity {
         btnList_LiveStream_Fragment02 = findViewById(R.id.MainActivity_List_LiveStream_Fragment_02);
         btnList_LiveStream_Fragment03 = findViewById(R.id.MainActivity_List_LiveStream_Fragment_03);
         btnList_LiveStream = findViewById(R.id.MainActivity_List_LiveStream_Activity);
-        btnList_LiveStream_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
-        btnList_LiveStream_Fragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
-        btnList_LiveStream_Fragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
+        btnList_LiveStream_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_ListLiveStream_Banner()));
+        btnList_LiveStream_Fragment02.setOnClickListener(v -> openFragment(new MainActivity_ListLiveStream_Video()));
+        btnList_LiveStream_Fragment03.setOnClickListener(v -> openFragment(new MainActivity_ListLiveStream_Channel()));
         btnList_LiveStream.setOnClickListener(v -> startActivity(new Intent(this, MainActivity_List_LiveStream.class)));
 
         // All LiveStream

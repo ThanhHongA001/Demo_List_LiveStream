@@ -1,6 +1,8 @@
 package com.example.demo_livestream.MainActivity_Channel;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -22,6 +24,7 @@ public class MainActivity_Channel extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
+    private TextView tvChannelName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class MainActivity_Channel extends AppCompatActivity {
         // Ánh xạ View
         tabLayout = findViewById(R.id.rm_activity_main_channel_tb_01);
         viewPager2 = findViewById(R.id.rm_activity_main_channel_vp2_01);
+
 
         // Thiết lập Adapter cho ViewPager2
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
@@ -45,6 +49,17 @@ public class MainActivity_Channel extends AppCompatActivity {
                 tab.setText("Video");
             }
         }).attach();
+
+        tvChannelName = findViewById(R.id.rm_activity_main_channel_tv_01);
+
+        // Lấy dữ liệu từ Intent
+        String channelId = getIntent().getStringExtra("channel_id");
+        String channelName = getIntent().getStringExtra("channel_name");
+
+        // Hiển thị tên kênh (nếu cần)
+        if (channelName != null) {
+            tvChannelName.setText("Kênh: " + channelName);
+        }
     }
 
     // Adapter quản lý Fragment cho ViewPager2

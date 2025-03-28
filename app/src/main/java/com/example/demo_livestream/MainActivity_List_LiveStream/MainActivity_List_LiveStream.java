@@ -1,13 +1,20 @@
 package com.example.demo_livestream.MainActivity_List_LiveStream;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
-import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
+
+import com.example.demo_livestream.MainActivity_Home.MainActivity_Home;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Banner;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Video;
+import com.example.demo_livestream.MainActivity_List_LiveStream.Fragment.MainActivity_ListLiveStream_Channel;
+import com.example.demo_livestream.MainActivity_Search.MainActivity_Search;
+import com.example.demo_livestream.MainActivity_Star.MainActivity_Star;
 import com.example.demo_livestream.R;
 import java.util.Arrays;
 import java.util.List;
@@ -23,14 +30,40 @@ public class MainActivity_List_LiveStream extends AppCompatActivity {
 
         // Danh sách các Fragment cần hiển thị
         List<Fragment> fragments_list_livestream = Arrays.asList(
-                new MainActivity_List_LiveStream_Fragment01(),
-                new MainActivity_List_LiveStream_Fragment02(),
-                new MainActivity_List_LiveStream_Fragment03()
+                new MainActivity_ListLiveStream_Banner(),
+                new MainActivity_ListLiveStream_Video(),
+                new MainActivity_ListLiveStream_Channel()
         );
 
         // Thiết lập Adapter cho RecyclerView
         MainActivity_List_LiveStream_Adapter adapter = new MainActivity_List_LiveStream_Adapter(this, fragments_list_livestream);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
+
+        // Ánh xạ các ImageView
+        ImageView imgBack = findViewById(R.id.rm_activity_main_list_livestream_img_01);
+        ImageView imgStar = findViewById(R.id.rm_activity_main_list_livestream_img_02);
+        ImageView imgSearch = findViewById(R.id.rm_activity_main_list_livestream_img_03);
+
+        // Sự kiện bấm nút back (chuyển sang MainActivity_Home)
+        imgBack.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_List_LiveStream.this, MainActivity_Home.class);
+            startActivity(intent);
+            finish();
+        });
+
+        // Sự kiện bấm vào imgStar (chuyển sang MainActivity_Star)
+        imgStar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_List_LiveStream.this, MainActivity_Star.class);
+            startActivity(intent);
+            finish();
+        });
+
+        // Sự kiện bấm vào imgSearch (chuyển sang MainActivity_Search)
+        imgSearch.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_List_LiveStream.this, MainActivity_Search.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }

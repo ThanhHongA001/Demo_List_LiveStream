@@ -25,6 +25,14 @@
             android:src="@drawable/rm_bacgroup_01"
             android:clipToOutline="true" />
 
+        <TextView
+            android:id="@+id/rm_activity_item01_tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"/>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

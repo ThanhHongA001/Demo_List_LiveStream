@@ -49,6 +49,9 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+    implementation ("org.apache.commons:commons-lang3:3.10")
+
+    implementation ("com.github.bumptech.glide:okhttp3-integration:4.12.0")
 
     implementation("me.relex:circleindicator:2.1.6")
 

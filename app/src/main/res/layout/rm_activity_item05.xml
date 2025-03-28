@@ -11,27 +11,37 @@
     android:paddingRight="5dp"
     android:layout_marginTop="8dp">
 
-    <ImageView
-        android:id="@+id/rm_activity_item05_img_01"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item05"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        app:cardCornerRadius="1000dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
         android:background="@drawable/rm_bg_btn_rounded_border_01"
-        android:padding="5dp"
-        android:src="@drawable/rm_bacgroup_04"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/rm_activity_item05_img_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rm_bacgroup_05"/>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/rm_activity_item05_tv_01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jone"
-        android:textSize="15sp"
+        android:gravity="center"
+        android:text="Jone  Jone"
         android:textColor="@color/main_color_new"
-        android:layout_marginTop="5dp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rm_activity_item05_img_01" />
+        app:layout_constraintTop_toBottomOf="@+id/cv_item05" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    rm_activity_item05-->

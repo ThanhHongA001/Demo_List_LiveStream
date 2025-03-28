@@ -24,7 +24,7 @@ public class MainActivity_List_LiveStream_Adapter extends RecyclerView.Adapter<M
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rm_activity_main_list_livestream_fragment_container, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rm_activity_main_list_livestream_container, parent, false);
         return new ViewHolder(view);
     }
 
